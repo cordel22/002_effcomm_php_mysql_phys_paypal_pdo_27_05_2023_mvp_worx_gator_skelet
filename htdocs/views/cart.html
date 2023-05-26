@@ -1,0 +1,67 @@
+<div class="main">
+
+    <div class="box alt">
+      <!--
+      <div class="left-top-corner">
+        <div class="right-top-corner">
+          <div class="border-top">
+
+          </div></div></div>  -->
+      <div class="border-left"><div class="border-right"><div class="inner">
+        <h2>Your Shopping Cart</h2>
+          <p>Please use this form to update your shopping cart. You may change
+            the quantities, move items to your wish list for future purchasing, or
+            remove items entirely. The  shipping and handling cost is based upon 
+            the order totl. When you are ready to complete your purchase, Please
+            click Checkout to be taken to a secure page for processing.
+          </p>
+    
+          <form action="/cart.php" method="POST">
+            <table border="0" cellspacing="8" cellpadding="6">
+              <tr>
+                <th align="center">Item</th>
+                <th align="center">Quantity</th>
+                <th align="right">Price</th>
+                <th align="right">Subtotal</th>
+                <th align="center">Options</th>
+              </tr>
+            
+    
+      <?php
+        $total = 0;
+    
+        //  display cart
+        require_once('htdocs/utils/cart_display.php');
+
+        
+    
+        echo '<tr>
+          <td colspan="3" align="right"><strong>Total</strong></td>
+          <td align="right">$' . number_format($total,2) . '</td>
+          <td>&nbsp;</td>
+        </tr>
+        ';
+      ?>
+    
+      </table><br /><p align="center"><input type="submit" value=
+        "Update Quantities" class="button" /></form></p><br />
+        <!-- put aside from above
+        <a href="/wishlist.php?sku=' . $row['sku'] .
+              '&action=move&qty=' . $row['quantity'] . '">Move to Wish List Doesnt work Now, check page 244</a>
+        -->
+        <!-- bug
+        <p align="center"><a href="<?php echo BASE_URL; ?>checkout.php?session=<?php echo $uid; ?>" class="button">
+        Checkout</a></p></div>
+        bug
+        -->
+        <p align="center"><a href="checkout.php?session=<?php echo $uid; ?>" class="button">
+        Checkout</a></p></div>
+    
+        </div></div><div class="left-bot-corner"><div class=
+          "right-bot-corner"><div class="border-bot"></div></div></div>
+        </div>
+        <!--  box end -->
+    
+    
+      </div>    <!--  main end -->
+    

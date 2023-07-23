@@ -21,7 +21,7 @@ include('./htdocs/includes/procedures.php');
 //  replace stored procedures with prepared statements
 //  $r = $pdo->query("CALL select_categories('$sp_type')");
 
-
+//  TODO  :   this will go into json for async call from the front
 if ($sp_type == 'coffee') {
   $r = $pdo->query($select_cat_coffee);
 } else if ($sp_type == 'other') {

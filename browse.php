@@ -36,6 +36,7 @@ if (
   //  replace stored procedures with prepared statements
   //  $r = $pdo->query("CALL select_products('$sp_type', $sp_cat)");
 
+  //  TODO  :   this will go into json for async call from the front
   $cat = $sp_cat;
   if ($sp_type == 'coffee') {
     $r = $pdo->prepare($select_prod_coffee);

@@ -14,16 +14,19 @@
                     . '"/>
                   </div><!--end class gallery -->
                   <p class="desc">  <!--  added class desc    -->
-                  ' . $row['description'] . '
+                    ' . $row['description'] . '
                   </p>
-                  <br />' .
-                  get_price('goodies', $row['price'], $row['sale_price']) . '
-                  <strong>Availability:</strong>'
-                  . get_stock_status($row['stock']) . '
-                </p>
-                <p>
-                  <a href="/cart.php?sku=' . $row['sku'] . '&action=add" class="button">Add to Cart</a>
-                </p>
+                    <br />
+                  <p class="desc">' .
+                    get_price('goodies', $row['price'], $row['sale_price']) . '
+                    <strong>Availability:</strong>'
+                    . get_stock_status($row['stock']) . '
+                  </p>
+                  <p class="desc">
+                    <button class="btn btn-header">
+                      <a href="/cart.php?sku=' . $row['sku'] . '&action=add" class="button">Add to Cart</a>
+                    </button>
+                  </p>
               </div>
             </div>  <!--  end of clearfix ...   -->
           ';

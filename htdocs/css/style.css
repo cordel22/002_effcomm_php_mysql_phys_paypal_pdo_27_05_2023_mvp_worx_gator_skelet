@@ -36,6 +36,7 @@ ul {
   background-image: url("../products/Coffee_beans.jpg");
   background-position:center;
   font-size: 1.5em;
+  background-size: cover;
 }
 
 .header a {

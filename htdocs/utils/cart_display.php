@@ -17,9 +17,13 @@ echo '<div class="cart_display">';
           <td align="right">$' . $price . '</td>
           <td align="right">$' . number_format($subtotal,2) . '</td>
           <td align="right">
-            <br /><a href="/cart.php?sku=' . $row['sku'] . '&action=remove">
-            Remove from Cart
-            </a></td>
+            <br />
+            <button class="btn btn-header">
+              <a href="/cart.php?sku=' . $row['sku'] . '&action=remove">
+                Remove from Cart
+              </a>
+            </button>  
+          </td>
           </tr>
           ';
           

@@ -4,10 +4,12 @@
 
 
     //  while ($row = mysqli_fetch_array($r,MYSQLI_ASSOC)) {
+    
+    //  TODO async call to browse.php ..?
         while ($row = $r->fetch(PDO::FETCH_ASSOC)) {
             if (!$header) {?>
             
-              <!--  box begin -->
+              <!--  box begin     moze ist v <>   -->
               <!--  <div class="box alt"> -->
                   <!--
                   <div class="left-top-corner">
@@ -18,7 +20,7 @@
                 <!--    <div class="border-left"> -->
                     
                   <!--  <div class="border-right">
-                  <div class="inner">  -->
+                  <div class="inner">       moze ist v <>     -->
                     
                     <h2><?php echo $category; ?></h2>
                     <div class="img-box">
@@ -27,7 +29,7 @@
                       ?></p>
                     </div>
                     
-                  <!--    </div></div>  -->
+                  <!--    </div></div>       moze ist v <>    -->
                   <!--    
                   <div class="left-bot-corner">
                       <div class="right-bot-corner">
@@ -36,19 +38,19 @@
                           </div></div><div>
                               -->
                   <!--        </div><!--    end of class="border-left"> -->
-                  <!--  </div> -->  <!--  box end -->
+                  <!--  </div> -->  <!--  box end      moze ist v <>    -->
                   
                   <p><br clear="all" /></p>
       
                   <!--  box begin -->
                   <div class="box">
                       
-                      <!--
+                      <!--         moze ist v <>   
                       <div class="left-top-corner">
                           <div class="right-top-corner"><div class="border-top">
                               
                           </div></div></div>
-                          -->
+                           moze ist v <>       -->
                   <div class="border-left">
                       <div class="border-right">
                           <div class="inner">
@@ -60,26 +62,30 @@
           <div class="clearfix" style="border: 1px solid black;"><!--first div  -->
             <div class="gallery">
               <h3>' . $row['name'] . '</h3>
-              <!--  <div class="img-box">   this div ws in the way!!! -->
-                <!--  <p>   -->
+              <!--  <div class="img-box">   this div ws in the way!!!        moze ist v <>   -->
+                <!--  <p>          moze ist v <>    -->
                   
-                  <img width="50" height="50"  alt="' . $row['name'] . '" src="htdocs/products/' . $row['image']
+              <img width="50" height="50"  alt="' . $row['name'] . '" src="htdocs/products/' . $row['image']
                   . '" />
             </div><!--end class gallery -->
               <p class="desc">  <!--  added class desc    -->
                   ' . $row['description'] . '<br />' .
                   
                   get_price($type,$row['price'],$row['sale_price']) .   '<!--  get_price, not get_SALE_price!!! -->' .
-                  '<strong>Availability:</strong>' . get_stock_status($row['stock']) . '<!--  p 218 ' . $row['stock'] . ' --></p>
-              <p>
-                <a href="/cart.php?sku=' . $row['sku'] . '&action=add"
-                    class="button">Add to Cart</a>
+                  '<strong>Availability:</strong>' . get_stock_status($row['stock']) . '<!--  p 218 ' . $row['stock'] . ' -->
+              </p>
+              <p class="desc">
+                <button class="btn btn-header">
+                  <a href="/cart.php?sku=' . $row['sku'] . '&action=add"
+                      class="button">Add to Cart
+                  </a>
+                </button>
               </p>
             </div>
           </div>  <!--  end first div  -->
           ';
       
-          /*  <!-- <h3>Red Dragon Mug</h3>
+          /*  <!-- <h3>Red Dragon Mug</h3>         moze ist v <>   
             //    ???
             <strong>Price:</strong>$' . $row['price'] . '<br /> 
       
@@ -94,5 +100,5 @@
             <p><a href="/cart.php?sku=O23&action=add" class="button">
               Add to Cart
             </a></p>
-          </div> -->  */
+          </div> -->         moze ist v <>      */
           }

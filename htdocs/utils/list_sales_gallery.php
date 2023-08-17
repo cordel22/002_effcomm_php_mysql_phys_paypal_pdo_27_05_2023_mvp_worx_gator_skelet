@@ -7,7 +7,7 @@
         echo '
           <div class="clearfix" style="border: 1px solid black;"><!--first div  -->                        
             <div class="gallery">
-              <h3 id="' . $row['sku'] . '">' . $row['category'] . '::' . $row['name'] . '<h3>
+              <h3 id="' . $row['sku'] . '">' . $row['category'] . '::' . $row['name'] . '<h3>   <!--  nechcel si zavec h3..?  -->
               <!--  <div class="img-box">   this must go off, in the way of css...  -->
                 <!--  <p>   -->
                   <img width="50" height="50"  alt="' . $row['name'] . '" src="/htdocs/products/' . $row['image']

@@ -4,6 +4,7 @@
 
 //  while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
     while ($row = $r->fetch(PDO::FETCH_ASSOC)) {
+      //  TODO async call to browse.php ..?
         if (!$header) { ?>
     
       

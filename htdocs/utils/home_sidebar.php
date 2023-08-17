@@ -17,6 +17,7 @@ if ($row_count >= 1) {
 
     //  while ($row = mysqli_fetch_array($r,MYSQLI_ASSOC)) {
     while ($row = $r->fetch(PDO::FETCH_ASSOC)) {
+      //  TODO async call to sales.php ..?
       echo '
       <dd>
         <div class="sale_items_home">

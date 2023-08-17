@@ -12,14 +12,14 @@ $contact_email = 'cordelfenevall@gmail.com';
 
 //  Determine location of files and the URL of the site:
 
-define('BASE_URI', 'C:\wamp\www\002_effcomm_php_mysql_phys_paypal_pdo_27_05_2023_mvp_worx_gator_skelet');
+define('BASE_URI', 'C:\wamp\www\002_effcomm_wds_php_mysql_phys_paypal_pdo_09_07_2023_mvp_worx_gator_skelet_cleancss');
 //  define('BASE_URI', '/home3/vladkomeciar/experim.siskotrade.com');
 
 define('BASE_URL', 'http://localhost:3000/'/*'localhost:3000/' 'www.example.com/' */);
 //  define('BASE_URL', 'www.experim.siskotrade.com/');
 
 
-define('MYSQL', 'C:\wamp\www\002_effcomm_php_mysql_phys_paypal_pdo_27_05_2023_mvp_worx_gator_skelet\pdo.php');
+define('MYSQL', 'C:\wamp\www\002_effcomm_wds_php_mysql_phys_paypal_pdo_09_07_2023_mvp_worx_gator_skelet_cleancss\pdo.php');
 //  define('MYSQL', '/home3/vladkomeciar/experim.siskotrade.com/pdo.php'/* '/path/to/mysql.inc.php' */);
 
 //  did you choose the correct routing from the options above??? Than do it!!!

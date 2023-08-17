@@ -206,6 +206,7 @@ if (isset($sp_type, $pid, $_GET['action']) && ($_GET['action'] == 'add')) {
 //  replace stored procedures with prepared statements
 //  $r = mysqli_query($dbc, "CALL get_shopping_cart_contents('$uid')");
 //  $r = $pdo->query("CALL get_shopping_cart_contents('$uid')");
+//  TODO  to json for async call
 $r = $pdo->prepare($get_shopping_cart_contents);
       $r->execute(array(
     
